@@ -235,7 +235,7 @@ function EventsLiveDemo() {
         </Col>
         <Col>
           <div style={{ background: C.bg, borderRadius: 10, border: `1px solid ${C.border}`, padding: "14px 16px", minHeight: 160, fontFamily: "monospace", fontSize: 13 }}>
-            {log.length === 0 && <span style={{ color: C.dim }}>// events appear here</span>}
+            {log.length === 0 && <span style={{ color: C.dim }}>events appear here</span>}
             {log.map((l, i) => (
               <div key={l.id} style={{ color: i === 0 ? C.green : C.dim, marginBottom: 4 }}>▶ {l.msg}</div>
             ))}
@@ -916,9 +916,9 @@ function FruitList() {
 
   return (
     <>
-      <input value={input}
+      <input value={input}                     {/* props */}
              onChange={e => setInput(e.target.value)} />
-      <button onClick={add}>Add</button>
+      <button onClick={add}>Add</button>       {/* event */}
 
       {todos.map(todo => (                     // list
         <li key={todo.id}                      // key
