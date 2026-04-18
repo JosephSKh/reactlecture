@@ -916,7 +916,7 @@ function FruitList() {
 
   return (
     <>
-      <input value={input}                     {/* props */}
+      <input value={input}         {/* props  */}
              onChange={e => setInput(e.target.value)} />
       <button onClick={add}>Add</button>       {/* event */}
 
