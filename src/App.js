@@ -916,9 +916,9 @@ function FruitList() {
 
   return (
     <>
-      <input value={input}         {/* props  */}
+      <input value={input}
              onChange={e => setInput(e.target.value)} />
-      <button onClick={add}>Add</button>       {/* event */}
+      <button onClick={add}>Add</button>
 
       {todos.map(todo => (                     // list
         <li key={todo.id}                      // key
